@@ -1,0 +1,22 @@
+/* Styles for the monitoring.html */
+
+.metric > .row > div.col-md-3 {
+    font-weight: bold;
+}
+
+.status {
+    color: white;
+    font-weight: bolder;
+}
+
+.status-ok {
+    background-color: #00aa00;
+}
+
+.status-warning {
+    background-color: #ddaa33;
+}
+
+.status-error {
+    background-color: #dd0022;
+}

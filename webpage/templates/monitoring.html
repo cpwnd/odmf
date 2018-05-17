@@ -1,0 +1,116 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/">
+
+<head>
+    <!-- Server configuration, see conf.py for HEAD_BASE -->
+    <base href="${head_base}" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous" />
+
+    <link href="/media/iconilr.css" rel="stylesheet" type="text/css"/>
+    <link href="/media/monitoring.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <script src="/media/jquery-ui-1.8.18.custom.min.js" type="text/javascript"></script>
+
+	<title>Monitoring</title>
+</head>
+<body>
+	${navigation('Monitoring')}
+  <div class="content">
+		<div class="error" id="errordiv"></div>
+
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-6 metric">
+                  <div class="row">
+                      <div class="col-sm-1 col-md-3">WaterOneFlow</div>
+                      <div class="col-xs-6 col-md-9">
+                            <div class="row">
+                                <div class="col-xs-3 col-md-3">Last time</div>
+                                <div class="col-xs-3 col-md-9">Yesterday 12:00</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-3 col-md-3">Status</div>
+                                <div class="col-xs-3 col-md-9 status status-ok">Ok</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4 col-md-3">Methods</div>
+                                <div class="col-xs-8 col-md-9"> f 13 / t 13 / s 13</div>
+                            </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 metric">
+                  <div class="row">
+                      <div class="col-md-3">ODM Schema validity</div>
+                      <div class="col-md-9">
+                          <div class="row">
+                                <div class="col-md-3">Last time</div>
+                                <div class="col-md-9">Yesterday 12:00</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">Status</div>
+                                <div class="col-md-9 status status-warning">Warning !</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">Datasets</div>
+                                <div class="col-md-9">16 Datasets are invalid and blocked from publishing</div>
+                            </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 metric">
+                  <div class="row">
+                      <div class="col-md-3">Daily jobs</div>
+                      <div class="col-md-9">
+                          <div class="row">
+                                <div class="col-md-3">Last time</div>
+                                <div class="col-md-9">Yesterday 12:00</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">Status</div>
+                                <div class="col-md-9 status status-error">Error (6)</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">Datasets updated</div>
+                                <div class="col-md-8">123</div>
+                            </div>
+                          <div class="row">
+                                <div class="col-md-4">Records updated</div>
+                                <div class="col-md-8">987654</div>
+                          </div>
+                          <div class="row">
+                                <div class="col-md-3">Time</div>
+                                <div class="col-md-3">13.432ms</div>
+                                <div class="col-md-3">13.432ms</div>
+                                <div class="col-md-3">13.432ms</div>
+
+                            </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 metric">
+                  <div class="row">
+                      <div class="col-md-3">Software version control</div>
+                      <div class="col-md-9">
+                          <div class="row">
+                                <div class="col-md-3">Version</div>
+                                <div class="col-md-9">1.2.3</div>
+                          </div>
+                          <div class="row">
+                                <div class="col-md-3">Last commit</div>
+                                <div class="col-md-9">
+                                    <a href="https://github.com/jlu-ilr-hydro/schwingbach/commit/c18de12dbf2648de2ad39ca346e100908124b7e1">
+                                        Fixes syntax error by cpwnd
+                                    </a>
+                                </div>
+                            </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</body>
+</html>

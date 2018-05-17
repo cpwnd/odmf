@@ -1003,6 +1003,15 @@ class ProjectPage:
         return web.render('projects.html', error=error, projects=projects)\
             .render('html', doctype='html')
 
+class Monitoring():
+
+    @expose_for(group.admin)
+    def default(self, error=None):
+
+        # TODO: add metrics
+
+        return web.render('monitoring.html', error=error)\
+            .render('html', doctype='html')
 
 class Root(object):
     _cp_config = {'tools.sessions.on': True,
@@ -1028,6 +1037,7 @@ class Root(object):
     plot = PlotPage()
     calendar = CalendarPage()
     wiki = Wiki()
+    monitoring = Monitoring()
 
     @expose_for()
     def index(self):
