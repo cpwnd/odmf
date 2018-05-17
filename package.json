@@ -1,0 +1,30 @@
+{
+  "name": "schwingbach",
+  "version": "1.0.0",
+  "description": "This project provides a webinterface for managing scientific data measurement based on  [cherrypy](https://github.com/cherrypy/cherrypy).",
+  "private": true,
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlu-ilr-hydro/schwingbach.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlu-ilr-hydro/schwingbach/issues"
+  },
+  "homepage": "https://github.com/jlu-ilr-hydro/schwingbach#readme",
+  "devDependencies": {
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3",
+    "jquery": "1.12.4"
+  }
+}

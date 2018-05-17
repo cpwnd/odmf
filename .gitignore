@@ -1,5 +1,11 @@
 # Schwingbach
-conf.py
-webpage/datafiles/**
-webpage/sessions/**
-webpage/preferences/**
+**/conf.py
+**/webpage/datafiles/**
+**/webpage/sessions/**
+**/webpage/preferences/**
+
+venv
+
+package-lock.json
+node_modules
+**/dist
