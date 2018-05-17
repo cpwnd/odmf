@@ -20,3 +20,8 @@
 .status-error {
     background-color: #dd0022;
 }
+
+/* Override bootstrap rule*/
+body {
+    line-height: normal;
+}
