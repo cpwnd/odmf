@@ -26,6 +26,8 @@ CFG_DATABASE_HOST = ''
 
 # Relative path for storing the media
 CFG_MEDIA_IMAGE_PATH = 'webpage/media'
+# TODO: Refactor this
+CFG_DATAFILES_PATH = 'webpage/datafiles'
 
 # Pattern for the relative path storing manual measurements files and there and the subfolders their have special
 # treatments from dataimport/mm.py
