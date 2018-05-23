@@ -1,5 +1,16 @@
 /* Styles for the monitoring.html */
 
+.metric {
+    margin: 1.2rem 0;
+    padding-top: 0.2rem;
+    border-color: #ccc;
+    border-style: solid;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right: none;
+    border-top-width: 1px;
+}
+
 .metric > .row > div.col-md-3 {
     font-weight: bold;
 }
@@ -10,15 +21,15 @@
 }
 
 .status-ok {
-    background-color: #00aa00;
+    background-color: #5cb85c;
 }
 
 .status-warning {
-    background-color: #ddaa33;
+    background-color: #f0ad4e;
 }
 
 .status-error {
-    background-color: #dd0022;
+    background-color: #d9534f;
 }
 
 /* Override bootstrap rule*/
