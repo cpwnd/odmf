@@ -40,14 +40,16 @@ def findStartDate(siteid, instrumentid):
 def finddateGaps(siteid, instrumentid, valuetype, startdate=None, enddate=None):
     """
 
-    Find gaps in with given params
+    Find gaps in or in between all datasets, that match the given params of siteid, instrumentid and
+     valuetype. Returns list of tuples with datetime pairs where no data rows are present for the given
+     paramters.
 
-    :param siteid:
-    :param instrumentid:
-    :param valuetype:
-    :param startdate:
-    :param enddate:
-    :return:
+    :param siteid: int
+    :param instrumentid: int
+    :param valuetype: int
+    :param startdate: datetime
+    :param enddate: datetime
+    :return: list of tuples of dates
     """
     print("[LOG] - finddateGaps - START")
     print("[LOG] - finddateGaps - valutype(s) list=%s" % valuetype)

@@ -41,6 +41,14 @@ The code base is divided in three main parts. **Server**, **automated import** a
 
 Utility code for calibration, conf and markdown parsing are saved in the `tools` module.
 
+### Server
+
+### Automated import
+
+* **finddateGaps:**
+
+### Database
+
 ## Core thoughts behind design decisions
 To connect more of the ideas under the hood of the server there are diagrams describing the user interaction for the most important functions of the platform.
 
