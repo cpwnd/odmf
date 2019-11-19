@@ -1,5 +1,9 @@
-# Schwingbach
-conf.py
-webpage/datafiles/**
-webpage/sessions/**
-webpage/preferences/**
+*.egg-info
+odmf/conf.py
+**/webpage/datafiles/**
+**/webpage/sessions/**
+**/webpage/preferences/**
+*.pyc
+**/venv/**
+**/.pytest_cache/**
+.idea
